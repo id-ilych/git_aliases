@@ -1,6 +1,6 @@
 [alias]
 	ff = pull origin --ff-only
-	up = fetch origin master:master
+	up = fetch origin develop:develop
 	fep = fetch --prune origin
 	df = diff --name-only
 	dfam = diff --name-only --diff-filter=AM
