@@ -1,0 +1,17 @@
+[alias]
+	ff = pull origin --ff-only
+	up = fetch origin master:master
+	fep = fetch --prune origin
+	df = diff --name-only
+	dfam = diff --name-only --diff-filter=AM
+	cdiff = diff --cached
+	cdf = diff --cached --name-only
+	puff = push --force-with-lease
+	newb = checkout -b
+	comfix = commit --fixup HEAD
+	comend = commit --amend --no-edit
+	comwip = commit -m 'WIP'
+	branch-name = rev-parse --abbrev-ref HEAD
+	publish = "!git push --set-upstream origin $(git branch-name)"
+	l = log --oneline -10
+	bump = commit --amend --allow-empty
